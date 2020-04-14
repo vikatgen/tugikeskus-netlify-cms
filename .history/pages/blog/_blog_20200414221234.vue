@@ -24,6 +24,7 @@ export default {
 .container {
   display: flex;
   justify-content: center;
+  border: 1px solid red;
 }
 
 img {
@@ -35,7 +36,6 @@ img {
 }
 
 h1 {
-  margin: 30px 0px;
   text-align: left;
   width: 550px;
 }

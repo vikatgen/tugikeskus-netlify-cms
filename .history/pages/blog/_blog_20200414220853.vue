@@ -2,7 +2,6 @@
   <div class="container">
     <article class="article-container">
       <h1>{{blogPost.title}}</h1>
-      <img :src="blogPost.thumbnail" alt />
       <div class="blog-body" v-html="$md.render(blogPost.body)" />
     </article>
   </div>
@@ -21,21 +20,13 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.acontainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-img {
-  margin: 30px 0px;
-  max-width: 100%;
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
 h1 {
-  margin: 30px 0px;
   text-align: left;
   width: 550px;
 }

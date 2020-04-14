@@ -24,18 +24,10 @@ export default {
 .container {
   display: flex;
   justify-content: center;
-}
-
-img {
-  margin: 30px 0px;
-  max-width: 100%;
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+  border: 1px solid red;
 }
 
 h1 {
-  margin: 30px 0px;
   text-align: left;
   width: 550px;
 }

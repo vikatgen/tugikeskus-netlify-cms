@@ -24,6 +24,7 @@ export default {
 .container {
   display: flex;
   justify-content: center;
+  border: 1px solid red;
 }
 
 img {
