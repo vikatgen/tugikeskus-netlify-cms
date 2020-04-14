@@ -1,11 +1,13 @@
 <template>
   <div class="container">
     <div>
-      <h2 class="subtitle">Saaremaa Tugikeskuse esileht</h2>
+      <nuxt-link to="/index">
+        <h2 class="subtitle">Tugikeskuse blogileht</h2>
+      </nuxt-link>
       <div class="post-lists">
-        <h2 class="post-lists-title">Uuemad postitused</h2>
+        <h2 class="post-lists-title">Kõik postitused</h2>
         <div class="post-container">
-          <div v-for="(post, index) in blogPosts" :key="index" v-if="index <= 3">
+          <div v-for="(post, index) in blogPosts" :key="index">
             <div class="post">
               <img :src="post.thumbnail" />
               <h2>{{ post.title }}</h2>
@@ -14,9 +16,6 @@
             </div>
           </div>
         </div>
-        <div>
-          <nuxt-link class="btn-to-blog" to="/blog">Vaata kõiki postitusi =></nuxt-link>
-        </div>
       </div>
     </div>
   </div>
@@ -24,13 +23,6 @@
 
 <script>
 export default {
-  head() {
-    return {
-      script: [
-        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" }
-      ]
-    };
-  },
   computed: {
     blogPosts() {
       return this.$store.state.blogPosts;
@@ -39,7 +31,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .container {
   margin: 0 auto;
   width: 90%;
