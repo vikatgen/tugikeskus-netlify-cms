@@ -92,7 +92,7 @@ export default {
   display: flex;
   height: 100%;
   justify-content: end;
-  align-items: flex-end;
+  border: 1px solid red;
   color: black;
   font-weight: 600;
   font-size: 0.9rem;

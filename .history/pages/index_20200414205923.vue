@@ -90,7 +90,6 @@ export default {
 .post .post__link {
   text-decoration: none;
   display: flex;
-  height: 100%;
   justify-content: end;
   align-items: flex-end;
   color: black;

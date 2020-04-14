@@ -68,31 +68,24 @@ export default {
 
 .post-container {
   display: flex;
-  flex-wrap: wrap;
-  height: auto;
-  justify-content: center;
-  margin: 30px 0px;
 }
 
 .post {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 15px;
+  margin: 15px;
   padding: 15px;
   width: 300px;
-  height: 100%;
+  height: auto;
   text-align: left;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03);
 }
 
-.post .post__link {
+.post__link {
   text-decoration: none;
-  display: flex;
-  height: 100%;
-  justify-content: end;
-  align-items: flex-end;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
   color: black;
   font-weight: 600;
   font-size: 0.9rem;
@@ -100,13 +93,9 @@ export default {
   opacity: 0.8;
 }
 
-.post .post__link:hover {
-  opacity: 0.5;
-}
-
 .post img {
   max-width: 100%;
-  height: 200px;
+  height: auto;
   margin-bottom: 1rem;
   border-radius: 15px;
   object-fit: cover;

@@ -90,9 +90,8 @@ export default {
 .post .post__link {
   text-decoration: none;
   display: flex;
-  height: 100%;
-  justify-content: end;
-  align-items: flex-end;
+  width: 100%;
+  text-align: right;
   color: black;
   font-weight: 600;
   font-size: 0.9rem;
