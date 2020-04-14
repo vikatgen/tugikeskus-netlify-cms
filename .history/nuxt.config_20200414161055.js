@@ -35,10 +35,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/markdownit"],
-  markdownit: {
-    injected: true
-  },
+  modules: [],
   /*
    ** Build configuration
    */

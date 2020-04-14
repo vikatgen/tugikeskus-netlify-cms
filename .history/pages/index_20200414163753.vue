@@ -9,6 +9,9 @@
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
     </div>
+    <div>
+      <h1>{{ blogPosts.title }}</h1>
+    </div>
   </div>
 </template>
 

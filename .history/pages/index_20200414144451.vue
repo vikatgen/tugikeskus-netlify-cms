@@ -25,11 +25,6 @@ export default {
   },
   components: {
     Logo
-  },
-  computed: {
-    blogPosts() {
-      return this.$store.state.blogPosts;
-    }
   }
 };
 </script>
