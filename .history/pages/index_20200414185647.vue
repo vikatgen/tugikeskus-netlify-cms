@@ -1,17 +1,17 @@
 <template>
   <div class="container">
     <div>
+      <logo />
       <h2 class="subtitle">Saaremaa Tugikeskuse koduleht</h2>
       <div class="post-lists">
         <h2 class="post-lists-title">Posts</h2>
-        <div class="post-container">
-          <div v-for="(post, index) in blogPosts" :key="index">
-            <div class="post">
+        <div v-for="(post, index) in blogPosts" :key="index">
+          <div class="post">
+            <nuxt-link :to="`/blog/${post.slug}`">
               <img src="post.thumbnail" />
               <h2>{{ post.title }}</h2>
               <p>{{ post.description }}</p>
-              <nuxt-link class="post__link" :to="`/blog/${post.slug}`">Loe rohkem</nuxt-link>
-            </div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import Logo from "~/components/Logo.vue";
+
 export default {
   head() {
     return {
@@ -27,6 +29,9 @@ export default {
         { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" }
       ]
     };
+  },
+  components: {
+    Logo
   },
   computed: {
     blogPosts() {
@@ -39,8 +44,10 @@ export default {
 <style>
 .container {
   margin: 0 auto;
-  width: 90%;
-  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -66,43 +73,14 @@ export default {
   padding-top: 15px;
 }
 
-.post-container {
-  display: flex;
-}
-
 .post {
   margin: 30px;
-  padding: 15px;
   width: 300px;
   height: auto;
-  text-align: left;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03);
-}
-
-.post__link {
-  text-decoration: none;
-  display: inline-block;
-  width: 100%;
-  text-align: right;
-  color: black;
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin-top: 1rem;
-  opacity: 0.8;
+  text-align: center;
 }
 
 .post img {
   margin-bottom: 1rem;
-}
-
-.post h2 {
-  font-size: 1rem;
-}
-
-.post p {
-  opacity: 0.7;
-  margin-top: 0.5rem;
 }
 </style>

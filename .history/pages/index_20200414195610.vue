@@ -39,8 +39,6 @@ export default {
 <style>
 .container {
   margin: 0 auto;
-  width: 90%;
-  max-width: 1200px;
   text-align: center;
 }
 

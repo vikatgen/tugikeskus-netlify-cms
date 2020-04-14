@@ -1,17 +1,16 @@
 <template>
   <div class="container">
     <div>
+      <logo />
       <h2 class="subtitle">Saaremaa Tugikeskuse koduleht</h2>
       <div class="post-lists">
         <h2 class="post-lists-title">Posts</h2>
-        <div class="post-container">
-          <div v-for="(post, index) in blogPosts" :key="index">
-            <div class="post">
-              <img src="post.thumbnail" />
-              <h2>{{ post.title }}</h2>
-              <p>{{ post.description }}</p>
-              <nuxt-link class="post__link" :to="`/blog/${post.slug}`">Loe rohkem</nuxt-link>
-            </div>
+        <div v-for="(post, index) in blogPosts" :key="index">
+          <div class="post">
+            <img src="post.thumbnail" />
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.description }}</p>
+            <nuxt-link class="post__link" :to="`/blog/${post.slug}`">Loe rohkem</nuxt-link>
           </div>
         </div>
       </div>
@@ -20,6 +19,8 @@
 </template>
 
 <script>
+import Logo from "~/components/Logo.vue";
+
 export default {
   head() {
     return {
@@ -27,6 +28,9 @@ export default {
         { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" }
       ]
     };
+  },
+  components: {
+    Logo
   },
   computed: {
     blogPosts() {
@@ -39,8 +43,10 @@ export default {
 <style>
 .container {
   margin: 0 auto;
-  width: 90%;
-  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
