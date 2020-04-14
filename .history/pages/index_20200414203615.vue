@@ -94,11 +94,7 @@ export default {
 }
 
 .post img {
-  max-width: 100%;
-  height: auto;
   margin-bottom: 1rem;
-  border-radius: 15px;
-  object-fit: cover;
 }
 
 .post h2 {

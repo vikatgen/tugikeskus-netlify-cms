@@ -7,7 +7,7 @@
         <div class="post-container">
           <div v-for="(post, index) in blogPosts" :key="index">
             <div class="post">
-              <img :src="post.thumbnail" />
+              <img src="post.thumbnail" />
               <h2>{{ post.title }}</h2>
               <p>{{ post.description }}</p>
               <nuxt-link class="post__link" :to="`/blog/${post.slug}`">Loe rohkem</nuxt-link>
@@ -94,11 +94,7 @@ export default {
 }
 
 .post img {
-  max-width: 100%;
-  height: auto;
   margin-bottom: 1rem;
-  border-radius: 15px;
-  object-fit: cover;
 }
 
 .post h2 {

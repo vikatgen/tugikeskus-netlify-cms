@@ -98,7 +98,6 @@ export default {
   height: auto;
   margin-bottom: 1rem;
   border-radius: 15px;
-  object-fit: cover;
 }
 
 .post h2 {
