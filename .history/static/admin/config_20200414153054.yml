@@ -1,6 +1,7 @@
 backend:
   name: github
-  repo: vikatgen/tugikeskus-netlify-cms
+  repo:  vikatgen /
+tugikeskus-netlify-cms 
   branch: master
 
 media_folder: static/img
