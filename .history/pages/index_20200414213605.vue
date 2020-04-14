@@ -140,6 +140,6 @@ export default {
   font-weight: 600;
   display: flex;
   justify-content: end;
-  margin: 60px 0px;
+  margin: 30px 0px;
 }
 </style>

@@ -132,14 +132,4 @@ export default {
   opacity: 0.7;
   margin-top: 0.5rem;
 }
-
-.btn-to-blog {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #526488;
-  font-weight: 600;
-  display: flex;
-  justify-content: end;
-  margin: 60px 0px;
-}
 </style>

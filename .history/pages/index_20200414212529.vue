@@ -5,7 +5,7 @@
       <div class="post-lists">
         <h2 class="post-lists-title">Uuemad postitused</h2>
         <div class="post-container">
-          <div v-for="(post, index) in blogPosts" :key="index" v-if="index <= 3">
+          <div v-for="(post, index) in blogPosts" :key="index">
             <div class="post">
               <img :src="post.thumbnail" />
               <h2>{{ post.title }}</h2>
@@ -13,9 +13,6 @@
               <nuxt-link class="post__link" :to="`/blog/${post.slug}`">Loe rohkem</nuxt-link>
             </div>
           </div>
-        </div>
-        <div>
-          <nuxt-link class="btn-to-blog" to="/blog">Vaata kõiki postitusi =></nuxt-link>
         </div>
       </div>
     </div>
@@ -61,11 +58,10 @@ export default {
   margin: 30px 0px;
   font-weight: 600;
   font-size: 3rem;
-  color: white;
-  padding: 30px;
+  color: #526488;
   word-spacing: 5px;
+  padding-bottom: 15px;
   text-transform: uppercase;
-  background-color: #526488;
 }
 
 .links {
@@ -83,7 +79,7 @@ export default {
 .post-lists-title {
   text-align: left;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 15px 0px;
+  padding: 15px;
 }
 
 .post {
@@ -131,15 +127,5 @@ export default {
 .post p {
   opacity: 0.7;
   margin-top: 0.5rem;
-}
-
-.btn-to-blog {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #526488;
-  font-weight: 600;
-  display: flex;
-  justify-content: end;
-  margin: 60px 0px;
 }
 </style>
