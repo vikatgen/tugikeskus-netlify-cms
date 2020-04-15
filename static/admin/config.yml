@@ -29,10 +29,10 @@ collections:
       - { label: "Pilt", name: "thumbnail", widget: "image" }
   - name: "workers"
     label: "Töötajad"
-    format: json
-    folder: assets/content/contacts
+    format: "json"
+    folder: "assets/content/contacts"
     create: true
-    slug: "{{job-category}}"
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
@@ -43,12 +43,12 @@ collections:
           widget: "select",
           options:
             - { label: "Juhtimine", value: "juhtimine" }
-            - { label: "Psühholoogid", value: "Psühholoogid" }
-            - { label: "Eripedagoogid", value: "Eripedagoogid" }
-            - { label: "Logopeedid", value: "Logopeedid" }
-            - { label: "Sotsiaalpedagoogid", value: "Sotsiaalpedagoogid" }
-            - { label: "Juhtumikorraldajad", value: "Juhtumikorraldajad" }
-            - { label: "Peretöötajad", value: "Peretöötajad" }
+            - { label: "Psühholoogid", value: "psühholoogid" }
+            - { label: "Eripedagoogid", value: "eripedagoogid" }
+            - { label: "Logopeedid", value: "logopeedid" }
+            - { label: "Sotsiaalpedagoogid", value: "sotsiaalpedagoogid" }
+            - { label: "Juhtumikorraldajad", value: "juhtumikorraldajad" }
+            - { label: "Peretöötajad", value: "peretöötajad" }
         }
       - { label: "Amet", name: "occupation", widget: "string" }
       - { label: "Seletus", name: "occupation-description", widget: "string" }
