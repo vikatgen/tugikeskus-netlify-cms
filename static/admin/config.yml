@@ -37,7 +37,19 @@ collections:
       preview: false
     fields:
       - { label: "Nimi", name: "name", widget: "string" }
-      - { label: "Vali kategooria", name: "job-category", widget: "select" options: ["Juhtimine", "Psühholoogid", "Eripedagoogid", "Logopeedid", "Sotsiaalpedagoogid", "Juhtumikorraldajad", "Peretöötajad"] }
+      - {
+          label: "Vali kategooria",
+          name: "job-category",
+          widget: "select",
+          options:
+            - { label: "Juhtimine", value: "juhtimine" }
+            - { label: "Psühholoogid", value: "Psühholoogid" }
+            - { label: "Eripedagoogid", value: "Eripedagoogid" }
+            - { label: "Logopeedid", value: "Logopeedid" }
+            - { label: "Sotsiaalpedagoogid", value: "Sotsiaalpedagoogid" }
+            - { label: "Juhtumikorraldajad", value: "Juhtumikorraldajad" }
+            - { label: "Peretöötajad", value: "Peretöötajad" }
+        }
       - { label: "Amet", name: "occupation", widget: "string" }
       - { label: "Seletus", name: "occupation-description", widget: "string" }
       - { label: "Telefoni number", name: "phone-number", widget: "number" }
