@@ -8,7 +8,7 @@ public_folder: "/img/"
 
 collections:
   - name: "blog"
-    label: "Blog"
+    label: "Blogi"
     format: "json"
     folder: "assets/content/blog"
     create: true
@@ -32,11 +32,12 @@ collections:
     format: json
     folder: assets/content/contacts
     create: true
-    slug: ""
+    slug: "{{job-category}}"
     editor:
       preview: false
     fields:
       - { label: "Nimi", name: "name", widget: "string" }
+      - { label: "Vali kategooria", name: "job-category", widget: "select" options: ["Juhtimine", "Psühholoogid", "Eripedagoogid", "Logopeedid", "Sotsiaalpedagoogid", "Juhtumikorraldajad", "Peretöötajad"] }
       - { label: "Amet", name: "occupation", widget: "string" }
       - { label: "Seletus", name: "occupation-description", widget: "string" }
       - { label: "Telefoni number", name: "phone-number", widget: "number" }
