@@ -19,12 +19,7 @@ collections:
       - { label: "Pealkiri", name: "title", widget: "string" }
       - { label: "Kuupäev", name: "date", widget: "datetime" }
       - { label: "Lühikirjeldus", name: "description", widget: "string" }
-      - {
-          label: "Esilehel",
-          name: "draft",
-          widget: "boolean",
-          default: false,
-        }
+      - { label: "Esilehel", name: "draft", widget: "boolean", default: false }
       - { label: "Sisu", name: "body", widget: "markdown" }
       - { label: "Pilt", name: "thumbnail", widget: "image" }
   - name: "workers"
@@ -37,19 +32,15 @@ collections:
       preview: false
     fields:
       - { label: "Nimi", name: "workerName", widget: "string" }
-      - {
-          label: "Vali kategooria",
-          name: "jobCategory",
-          widget: "select",
-          options:
-            - { label: "Juhtimine", value: "juhtimine" }
-            - { label: "Psühholoogid", value: "psühholoogid" }
-            - { label: "Eripedagoogid", value: "eripedagoogid" }
-            - { label: "Logopeedid", value: "logopeedid" }
-            - { label: "Sotsiaalpedagoogid", value: "sotsiaalpedagoogid" }
-            - { label: "Juhtumikorraldajad", value: "juhtumikorraldajad" }
-            - { label: "Peretöötajad", value: "peretöötajad" }
-        }
+      - { label: "Vali kategooria", name: "jobCategory", widget: "select" }
+      # options:
+      #   - { label: "Juhtimine", value: "juhtimine" }
+      #   - { label: "Psühholoogid", value: "psühholoogid" }
+      #   - { label: "Eripedagoogid", value: "eripedagoogid" }
+      #   - { label: "Logopeedid", value: "logopeedid" }
+      #   - { label: "Sotsiaalpedagoogid", value: "sotsiaalpedagoogid" }
+      #   - { label: "Juhtumikorraldajad", value: "juhtumikorraldajad" }
+      #   - { label: "Peretöötajad", value: "peretöötajad" }
       - { label: "Amet", name: "occupation", widget: "string" }
       - { label: "Seletus", name: "occupationDescription", widget: "markdown" }
       - { label: "Telefoni number", name: "phoneNumber", widget: "number" }

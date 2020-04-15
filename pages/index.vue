@@ -103,7 +103,7 @@ export default {
   text-decoration: none;
   display: flex;
   height: 100%;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-end;
   color: black;
   font-weight: 600;
@@ -139,7 +139,7 @@ export default {
   color: #526488;
   font-weight: 600;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 60px 0px;
 }
 </style>
