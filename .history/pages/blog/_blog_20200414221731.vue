@@ -29,7 +29,7 @@ export default {
 img {
   margin: 30px 0px;
   max-width: 550px;
-  width: 100%;
+  width: 90%;
   height: 300px;
   object-fit: cover;
 }

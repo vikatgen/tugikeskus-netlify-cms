@@ -37,13 +37,12 @@ img {
 h1 {
   margin: 30px 0px;
   text-align: left;
-  width: 100%;
-  max-width: 550px;
+  width: 550px;
 }
 
 .blog-body {
   text-align: left;
-  width: 100%;
+  width: 90%;
   max-width: 550px;
   margin: 30px 0px;
 }

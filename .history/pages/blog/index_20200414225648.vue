@@ -7,7 +7,7 @@
       <div class="post-lists">
         <h2 class="post-lists-title">Kõik postitused</h2>
         <div class="post-container">
-          <div v-for="(post, index) in blogPosts.slice().reverse()" :key="index">
+          <div v-for="(post, index) in blogPosts" :key="index">
             <div class="post">
               <img :src="post.thumbnail" />
               <h2>{{ post.title }}</h2>
