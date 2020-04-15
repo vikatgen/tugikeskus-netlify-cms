@@ -20,7 +20,7 @@ collections:
       - { label: "Kuupäev", name: "date", widget: "datetime" }
       - { label: "Lühikirjeldus", name: "description", widget: "string" }
       - {
-          label: "Kas läheb esilehele?",
+          label: "Esilehel",
           name: "draft",
           widget: "boolean",
           default: false,
@@ -36,10 +36,10 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Nimi", name: "name", widget: "string" }
+      - { label: "Nimi", name: "workerName", widget: "string" }
       - {
           label: "Vali kategooria",
-          name: "job-category",
+          name: "jobCategory",
           widget: "select",
           options:
             - { label: "Juhtimine", value: "juhtimine" }
@@ -51,6 +51,6 @@ collections:
             - { label: "Peretöötajad", value: "peretöötajad" }
         }
       - { label: "Amet", name: "occupation", widget: "string" }
-      - { label: "Seletus", name: "occupation-description", widget: "string" }
-      - { label: "Telefoni number", name: "phone-number", widget: "number" }
-      - { label: "Emaili aadress", name: "email-address", widget: "string" }
+      - { label: "Seletus", name: "occupationDescription", widget: "markdown" }
+      - { label: "Telefoni number", name: "phoneNumber", widget: "number" }
+      - { label: "Emaili aadress", name: "emailAddress", widget: "string" }
